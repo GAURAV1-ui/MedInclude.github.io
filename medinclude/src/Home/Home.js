@@ -1,10 +1,15 @@
 import React from 'react'
+import TextContainer from '../components/TextContainer/TextContainer'
 
 const Home = () => {
   return (
+    <>
     <div>
-        <h2>Record</h2>
+    <TextContainer/>
+
     </div>
+        
+    </>
   )
 }
 
