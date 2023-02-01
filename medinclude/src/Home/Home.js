@@ -6,10 +6,10 @@ const Home = () => {
   return (
     <>
     <div className={styles.home}>
-            <h2>Record</h2>
-        </div>
+        <h2>Record</h2>
+    </div>
     <div>
-    <TextContainer/>
+        <TextContainer/>
 
     </div>
         

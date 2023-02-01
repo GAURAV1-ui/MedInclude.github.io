@@ -3,7 +3,7 @@
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	background: #5265c4;
+	background: #0d6d5a;
   }
   
   .Navbar > .nav-logo {
@@ -19,7 +19,7 @@
 	font-size: 16px;
 	text-decoration: none;
 	margin: 15px;
-	/* padding-right:35px; */
+	padding-right:35px;
 	position: relative;
 	opacity: 0.9;
   }
