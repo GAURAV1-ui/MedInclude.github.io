@@ -5,10 +5,11 @@ const Navbar = () => {
   return (
     <div className="Navbar">
       <span className="nav-logo">MedInclude</span>
+      
       <div className={`nav-items ${isOpen && "open"}`}>
-        <a href="/home">Home</a>
-        <a href="/about">Portal</a>
+        <a href="/">Portal</a>
         <a href="/service">Records</a>
+        <button>Login</button>
       </div>
       <div
         className={`nav-toggle ${isOpen && "open"}`}

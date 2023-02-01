@@ -4,13 +4,13 @@
 	justify-content: space-between;
 	align-items: center;
 	background: #0d6d5a;
+	/* padding: 2rem; */
   }
   
   .Navbar > .nav-logo {
 	font-weight: 700;
 	font-size: 21px;
-	margin: 15px;
-	/* padding-left:25px; */
+	padding-left:25px;
 	color: #ffffff;
   }
   
@@ -19,7 +19,7 @@
 	font-size: 16px;
 	text-decoration: none;
 	margin: 15px;
-	padding-right:35px;
+	margin-right: 3rem;
 	position: relative;
 	opacity: 0.9;
   }
@@ -40,7 +40,7 @@
   }
   
   .Navbar > .nav-items > a:hover::before {
-	width: 100%;
+	width: 70%;
   }
   
   .Navbar > .nav-toggle {
@@ -53,7 +53,7 @@
 	  top: 60px;
 	  display: flex;
 	  flex-direction: column;
-	  background: #3b4da7;
+	  background: #0d6d5a;
 	  left: 0;
 	  width: 60%;
 	  height: 100%;
