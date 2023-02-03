@@ -1,7 +1,50 @@
-.card {
-    margin: 1.2rem;
-    padding: 1.2rem;
+/* .card {
+    position: fixed;
+    top: 20vh;
+    left: 10%;
+    width: 50%;
+    margin: 1rem;
+    padding: 1rem;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
     border-radius: 2px;
     background-color: white;
   }
+
+  @media (max-width: 768px) {
+    .card{
+        position: fixed;
+        width: 100%;
+    }
+    }
+  
+   */
+   .card {
+    position: fixed;
+    top: 20vh;
+    left: 5%;
+    width: 90%;
+    background-color: rgb(253, 251, 247);;
+    padding: 2rem;
+    border-radius: 5px;
+    border: 2px solid #287e6d;
+    /* box-shadow: 0 2px 8px rgba(241, 236, 236, 0.25); */
+  }
+
+  
+  @media (min-width: 768px) {
+    .card {
+      width: 40rem;
+      left: calc(50% - 20rem);
+    }
+  }
+  @media (max-width: 768px) {
+    body{
+        background-color:rgb(253, 251, 247); ;
+    }
+    .card {
+      border: none;
+      width: 90%;
+      padding: .5rem;
+    }
+  }
+  

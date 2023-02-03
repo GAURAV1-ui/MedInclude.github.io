@@ -17,8 +17,7 @@ const Input = (props) => {
 
   return (
     <div
-    className={classes.control}
-  >
+    className={classes.control}>
     <label htmlFor={props.id}>{props.label}</label>
     <input
       // ref={inputRef}
