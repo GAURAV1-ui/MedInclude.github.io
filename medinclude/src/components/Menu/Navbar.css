@@ -3,14 +3,14 @@
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	background: #0d6d5a;
+	background: #106e5b;
 	/* padding: 2rem; */
   }
-  
+
   .Navbar > .nav-logo {
 	font-weight: 700;
 	font-size: 21px;
-	padding-left:25px;
+	padding-left:30px;
 	color: #ffffff;
   }
   
@@ -46,8 +46,13 @@
   .Navbar > .nav-toggle {
 	display: none;
   }
+
+  .nav-items button{
+	margin-right: 2rem;
+  }
   
   @media (max-width: 700px) {
+	
 	.Navbar > .nav-items {
 	  position: absolute;
 	  top: 60px;
@@ -59,6 +64,9 @@
 	  height: 100%;
 	  transform: translateX(-100%);
 	  transition: all .45s;
+	  z-index: 10;
+	  padding: 1rem;
+	 
 	}
   
 	.Navbar > .nav-items > a::before {
@@ -76,6 +84,7 @@
 	  align-items: center;
 	  justify-content: center;
 	  cursor: pointer;
+	  margin-right: 10px;
 	}
   
 	.nav-toggle > .bar {

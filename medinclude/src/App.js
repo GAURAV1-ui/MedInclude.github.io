@@ -1,13 +1,38 @@
+import React, {useState} from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import './App.css';
 import Navbar from './components/Menu/Navbar';
 import Portal from './Portal/Portal';
+import Records from "./Records/Records";
+import Login from "./components/Login/Login";
+import SignUp from "./components/SignUp/SignUp";
+
+
+
 
 function App() {
+  const [LoginIsShown, setLoginIsShown] = useState(false);
+
+const showLoginHandler = () => {
+  setLoginIsShown(true);
+};
+
+const hideLoginHandler = () => {
+  setLoginIsShown(false);
+};
   return (
-    <div className="App">
-      <Navbar/>
-      <Portal/>
-    </div>
+    <main>
+      <Router>
+        {LoginIsShown && <Login onCloseLogin = {hideLoginHandler}/>}
+         <Navbar onShowLogin ={showLoginHandler}/>
+         
+        <Routes>
+          <Route exact path="/" element={<Portal/>}/>
+          <Route exact path="/records" element={<Records/>}/>
+          <Route exact path ="/signup" element = {<SignUp/>}/>
+        </Routes>
+      </Router>
+    </main>
   );
 }
 

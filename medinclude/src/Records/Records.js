@@ -1,13 +1,17 @@
 import React from 'react'
 import TextContainer from '../components/TextContainer/TextContainer'
-import Card from '../components/UI/Card'
-import style from './Records.module.css'
+import styles from './Records.module.css'
 
 const Records = () => {
   return (
-    <Card>
+    <>
+        <div className={styles.record}>
+            <h1>Records</h1>
+        </div>
         <TextContainer/>
-    </Card>
+        <TextContainer/>
+    </>
+  
   )
 }
 

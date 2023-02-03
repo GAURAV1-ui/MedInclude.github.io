@@ -1,15 +1,18 @@
 import React, { useState } from "react";
+import { NavLink } from "react-router-dom";
+import Button from '../UI/Button';
 import "./Navbar.css";
-const Navbar = () => {
+const Navbar = (props) => {
   const [isOpen, setIsOpen] = useState(false);
+ 
   return (
     <div className="Navbar">
       <span className="nav-logo">MedInclude</span>
       
       <div className={`nav-items ${isOpen && "open"}`}>
-        <a href="/">Portal</a>
-        <a href="/service">Records</a>
-        <button>Login</button>
+        <NavLink to="/" activeClassName = "">Portal</NavLink>
+        <NavLink to="/records" activeClassName = "">Records</NavLink>
+        <Button onClick = {props.onShowLogin}>Login</Button>
       </div>
       <div
         className={`nav-toggle ${isOpen && "open"}`}
