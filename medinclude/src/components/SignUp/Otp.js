@@ -1,4 +1,5 @@
 import React,{useRef} from 'react'
+import { useNavigate } from 'react-router-dom';
 import Button from '../UI/Button';
 import Card from '../UI/Card';
 import Input from '../UI/Input/Input';
@@ -8,6 +9,11 @@ import styles from './Otp.module.css';
 const Otp = (props) => {
 
     const otpInputRef = useRef();
+
+    const navigate = useNavigate();
+    const handleClickOtp =() => {
+        navigate("/password");
+      } 
 
   return (
     <div>
@@ -34,7 +40,7 @@ const Otp = (props) => {
         />
         </form>
         <div className={styles.button}>
-        <Button>Continue</Button>
+        <Button onClick = {handleClickOtp}>Continue</Button>
         </div>
     </Card>
     </div>

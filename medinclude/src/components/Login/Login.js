@@ -1,4 +1,5 @@
 import React,{useRef} from 'react'
+import { useNavigate } from 'react-router-dom';
 // import Modal from '../UI/Modal'
 import Back from '../SignUp/Back';
 import Input from '../UI/Input/Input';
@@ -11,6 +12,15 @@ const Login = (props) => {
     const firstNameInputRef = useRef();
     const lastNameInputRef = useRef();
     
+    const navigate = useNavigate();
+
+    const handleClickSignup =() => {
+      navigate("/signup");
+    } 
+
+    const handleClickLogin =() => {
+        navigate("/");
+    }
   return (
     // <Modal className = {styles.modal} onClose = {props.onCloseLogin}>
     //     <div>
@@ -71,10 +81,10 @@ const Login = (props) => {
     <CheckBox/>
     </form>
     <div className={styles.button}>
-    <Button>Log In</Button>
+    <Button onClick = {handleClickLogin}>Log In</Button>
     </div>
     <div className={styles.signup}>
-    <p>Don't have an account? <a href="/" style={{color: "green", textDecoration: "none"}}>Sign Up</a></p>
+    <p>Don't have an account? <button style={{color: "green", backgroundColor: "transparent",border:"none",fontSize:"17px", cursor:"pointer"}} onClick = {handleClickSignup}>Sign Up</button></p>
     </div>
 </Card>
 

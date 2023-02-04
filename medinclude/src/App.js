@@ -11,28 +11,26 @@ import Otp from "./components/SignUp/Otp";
 import Password from "./components/SignUp/Password";
 import NewRecord from "./NewRecord/NewRecord";
 
-
-
-
 function App() {
   // const [LoginIsShown, setLoginIsShown] = useState(false);
 
-
-
-
   return (
-    <main>
+    <main>      
       <Router>
+
         <Routes>
           <Route exact path="/" element={<Portal/>}/>
-          <Route exact path="/records" element={<Records/>}/>
+          <Route exact path="/records" element={<Records/>}/>    
+          <Route exact path = "/newrecord" element = {<NewRecord/>}/>
+
+        
+       
           <Route exact path= "/login" element ={<Login/>}/>
           <Route exact path ="/signup" element = {<SignUp/>}/>
-          <Route exact path ="/emailVerification" element = {<EmailVerification/>}/>
-          <Route exact path ="/otp" element = {<Otp/>}/>
-          <Route exact path ="/password" element = {<Password/>}/>
-          <Route exact path = "/newrecord" element = {<NewRecord/>}/>
-        </Routes>
+            <Route exact path ="/emailverification" element = {<EmailVerification/>}/>
+            <Route exact path ="/otp" element = {<Otp/>}/>
+            <Route exact path ="/password" element = {<Password/>}/>
+            </Routes>    
       </Router>
     </main>
   );

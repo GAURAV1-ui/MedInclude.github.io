@@ -1,4 +1,5 @@
 import React,{useRef} from 'react'
+import { useNavigate } from 'react-router-dom';
 import Button from '../UI/Button';
 import Card from '../UI/Card';
 import Input from '../UI/Input/Input';
@@ -8,6 +9,12 @@ import styles from './Password.module.css';
 const Password = (props) => {
 
     const passwordInputRef = useRef();
+
+    const navigate = useNavigate();
+
+    const handleClickPassword =() => {
+      navigate("/");
+    } 
 
   return (
     <div>
@@ -42,7 +49,7 @@ const Password = (props) => {
         </div>
         </div>
         <div className={styles.button}>
-        <Button>Continue</Button>
+        <Button onClick = {handleClickPassword}>Continue</Button>
         </div>
     </Card>
     </div>

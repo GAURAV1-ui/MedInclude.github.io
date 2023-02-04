@@ -1,4 +1,5 @@
 import React,{useRef} from 'react'
+import { useNavigate } from 'react-router-dom';
 import Button from '../UI/Button';
 import Card from '../UI/Card';
 import Input from '../UI/Input/Input';
@@ -10,6 +11,11 @@ const SignUp = (props) => {
     const firstNameInputRef = useRef();
     const lastNameInputRef = useRef();
 
+    const navigate = useNavigate();
+
+    const handleClickSignup =() => {
+      navigate("/emailverification");
+    } 
   return (
     <div>
         <Back/>
@@ -27,6 +33,7 @@ const SignUp = (props) => {
         id = "fisrtName" 
         label= "First Name" 
         type="text" 
+        placeholder= "John"
         // isValid={emailIsValid} 
         value =""
         // onChange={emailChangeHandler}
@@ -39,12 +46,13 @@ const SignUp = (props) => {
         type="text" 
         // isValid={emailIsValid} 
         value =""
+        placeholder ="Doe"
         // onChange={emailChangeHandler}
         // onBlur={validateEmailHandler}/>
         />
         </form>
         <div className={styles.button}>
-        <Button>Continue</Button>
+        <Button onClick = {handleClickSignup}>Continue</Button>
         </div>
     </Card>
     </div>
