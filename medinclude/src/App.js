@@ -6,6 +6,9 @@ import Portal from './Portal/Portal';
 import Records from "./Records/Records";
 import Login from "./components/Login/Login";
 import SignUp from "./components/SignUp/SignUp";
+import EmailVerification from "./components/SignUp/EmailVerification";
+import Otp from "./components/SignUp/Otp";
+import Password from "./components/SignUp/Password";
 
 
 
@@ -29,7 +32,11 @@ const hideLoginHandler = () => {
         <Routes>
           <Route exact path="/" element={<Portal/>}/>
           <Route exact path="/records" element={<Records/>}/>
+          <Route exact path= "/login" element ={<Login/>}/>
           <Route exact path ="/signup" element = {<SignUp/>}/>
+          <Route exact path ="/emailVerification" element = {<EmailVerification/>}/>
+          <Route exact path ="/otp" element = {<Otp/>}/>
+          <Route exact path ="/password" element = {<Password/>}/>
         </Routes>
       </Router>
     </main>

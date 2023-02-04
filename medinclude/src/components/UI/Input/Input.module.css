@@ -1,5 +1,5 @@
 .control {
-    margin: 2rem 0;
+    margin: 1rem 0;
     display: flex;
     align-items:stretch;
     flex-direction: column;
@@ -10,19 +10,26 @@
   .control input {
     display: block;
   }
+
+  .control ::placeholder{
+    font-size: 22px;
+    color: #4b9385;
+    font-weight: 500;
+  }
   
   .control label {
     /* font-weight: bold; */
     flex: 1;
-    font-size: 22px;
+    font-size: 35px;
+    font-weight: 500;
     color: #106e5b;
-    margin-bottom: 0.5rem;
+    margin-bottom: 1rem;
   }
   
   .control input {
     flex: 3;
     font: inherit;
-    padding: 0.8rem;
+    padding: 1rem;
     border-radius: 6px;
     border: 2px solid #1e8570;
   }
@@ -38,10 +45,9 @@
     background: #fbdada;
   }
 
-  /* @media (min-width: 768px) {
-    .control {
-      align-items: center;
-      flex-direction: row;
-    }
+  @media (min-width: 700px) {
+ .control label {
+  font-size: 30px;
+ }
   
-  } */
+  }

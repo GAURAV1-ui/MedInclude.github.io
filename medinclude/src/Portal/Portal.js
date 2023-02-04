@@ -11,7 +11,10 @@ const Portal = () => {
         <div class={styles.hero_text}>
           <h1>Simple. Understandable. Accessible</h1>
           <br/>
+          <div className={styles.button}>
           <Button>Get Started</Button>
+          <Button>Log In</Button>
+          </div>
       </div>
       
     </div>

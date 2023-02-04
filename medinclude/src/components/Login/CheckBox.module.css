@@ -1,7 +1,7 @@
 
 
 .checkbox input {
-    margin: 20px 25px;
+    margin: 20px 15px;
 }
 
 
@@ -16,11 +16,11 @@
     border: 1px solid rgb(198, 193, 193);
     border-radius: 50%;
     cursor: pointer;
-    height: 28px;
+    height: 24px;
     left: 0;
     position: absolute;
-    margin: 13px 18px;
-    width: 28px;
+    margin: 13px 5px;
+    width: 24px;
   }
   
   .checkbox label:after {
