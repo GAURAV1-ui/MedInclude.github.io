@@ -12,7 +12,7 @@ const Navbar = (props) => {
       <div className={`nav-items ${isOpen && "open"}`}>
         <NavLink to="/" activeClassName = "">Portal</NavLink>
         <NavLink to="/records" activeClassName = "">Record</NavLink>
-        <NavLink to='/newrecord' activeClassName = ""> add</NavLink>
+        <NavLink to='/newrecord' activeClassName = ""> Add</NavLink>
         {/* <Button onClick = {props.onShowLogin}>Login</Button> */}
       </div>
       <div

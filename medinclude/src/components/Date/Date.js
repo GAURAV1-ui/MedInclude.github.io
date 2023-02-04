@@ -6,7 +6,7 @@ const Dates = () => {
 const current = new Date();
 const day = current.toDateString();
   return (
-    <div>
+    <div className={styles.date}>
             {day}
     </div>
   )
