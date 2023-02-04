@@ -9,26 +9,20 @@ import SignUp from "./components/SignUp/SignUp";
 import EmailVerification from "./components/SignUp/EmailVerification";
 import Otp from "./components/SignUp/Otp";
 import Password from "./components/SignUp/Password";
+import NewRecord from "./NewRecord/NewRecord";
 
 
 
 
 function App() {
-  const [LoginIsShown, setLoginIsShown] = useState(false);
+  // const [LoginIsShown, setLoginIsShown] = useState(false);
 
-const showLoginHandler = () => {
-  setLoginIsShown(true);
-};
 
-const hideLoginHandler = () => {
-  setLoginIsShown(false);
-};
+
+
   return (
     <main>
       <Router>
-        {LoginIsShown && <Login onCloseLogin = {hideLoginHandler}/>}
-         <Navbar onShowLogin ={showLoginHandler}/>
-         
         <Routes>
           <Route exact path="/" element={<Portal/>}/>
           <Route exact path="/records" element={<Records/>}/>
@@ -37,6 +31,7 @@ const hideLoginHandler = () => {
           <Route exact path ="/emailVerification" element = {<EmailVerification/>}/>
           <Route exact path ="/otp" element = {<Otp/>}/>
           <Route exact path ="/password" element = {<Password/>}/>
+          <Route exact path = "/newrecord" element = {<NewRecord/>}/>
         </Routes>
       </Router>
     </main>

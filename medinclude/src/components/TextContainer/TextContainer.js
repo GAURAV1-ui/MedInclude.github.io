@@ -1,13 +1,13 @@
 import React from 'react';
 import Card1 from '../UI/Card1';
+import Date from '../Date/Date';
 import classes from './TextContainer.module.css'
 
 const TextContainer = () => {
 
-const current = new Date();
+
 // const text = current.toString();
 // var day = current.toLocaleString('default', { day: 'long' });
-const day = current.toDateString();
 // const month = current.toLocaleString('default', { month: 'long' });
 // const date = `${current.getMonth()} ${current.getDate()},${current.getFullYear()}`;
 
@@ -17,15 +17,12 @@ const day = current.toDateString();
         <div>
             <h3>Test Result</h3>
         </div>
-        <div>
-            {day}
-        </div>
+        <Date/>
         </div> 
         <br/>
         <section>
             <p>Understanding medical information is essential to improving patient engagement and envolvement and involvement in thier own care.</p>
-        </section>
-     
+        </section> 
     </Card1>
   )
 }

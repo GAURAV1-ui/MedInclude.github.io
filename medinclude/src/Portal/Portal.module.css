@@ -35,17 +35,28 @@
 
 .portal {
     /* text-align: center; */
-    padding: 2rem;
+    padding: 1rem;
 }
 .button{
   display: flex;
-  margin-top: 10rem;
-
+  margin-top: 1rem;
+  justify-content: center;
+  gap: 100px;
+  margin-left: -7rem;
 }
 
 .button button {
-  width: 40%;
-  margin-right: 20px;
+width: 100%;
+}
+.button1 button{
+  color: #106e5b;
+  background-color: #eefaf8;
+  width: 160%;
+}
+.button2 button{
+  color: white;
+  background-color:#106e5b;
+  width: 250%;
 }
 
 
@@ -56,9 +67,12 @@
   .button {
    display: flex;
    flex-direction: column;
+   margin-top: 8rem;
+   margin-left: 0;
+   gap:15px;
   }
   .button button {
    width: 100%;
-   margin-bottom: 1rem;
+   /* margin-bottom: 1rem; */
   }
 }

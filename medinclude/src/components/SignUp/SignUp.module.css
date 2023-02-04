@@ -10,12 +10,17 @@ body{
 }
 .heading{
     color: #106e5b;
+    margin-bottom: 3rem;
 }
 
 .line{
     border: 2px solid #106e5b;
     margin-top: -11px;
     margin-bottom: 3rem;
+}
+
+.button button {
+    margin-top: 2rem;
 }
 
 /* .button button {
