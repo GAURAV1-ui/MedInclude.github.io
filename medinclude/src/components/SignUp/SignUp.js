@@ -14,6 +14,9 @@ const SignUp = (props) => {
     const navigate = useNavigate();
 
     const handleClickSignup =() => {
+      const firstName = firstNameInputRef.current.value;
+      const lastName = lastNameInputRef.current.value;
+      console.log(firstName);
       navigate("/emailverification");
     } 
   return (
@@ -29,31 +32,33 @@ const SignUp = (props) => {
         </div>
         <form >
         <Input 
-        ref = {firstNameInputRef}
+        
         id = "fisrtName" 
         label= "First Name" 
         type="text" 
         placeholder= "John"
+        ref = {firstNameInputRef}
         // isValid={emailIsValid} 
-        value =""
         // onChange={emailChangeHandler}
         // onBlur={validateEmailHandler}/>
         />
         <Input 
-        ref = {lastNameInputRef}
+        
         id = "lastName" 
         label= "LastName" 
         type="text" 
+        ref = {lastNameInputRef}
         // isValid={emailIsValid} 
-        value =""
+
         placeholder ="Doe"
         // onChange={emailChangeHandler}
         // onBlur={validateEmailHandler}/>
         />
-        </form>
         <div className={styles.button}>
         <Button onClick = {handleClickSignup}>Continue</Button>
         </div>
+        </form>
+        
     </Card>
     </div>
   );
